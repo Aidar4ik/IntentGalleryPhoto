@@ -42,8 +42,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(Intent.ACTION_SEND);
                 intent.setType("text/html");
-                intent.putExtra(Intent.EXTRA_EMAIL, "sayevnur@gmail.com");
-                intent.putExtra(Intent.EXTRA_SUBJECT, "Subject");
+                intent.putExtra(Intent.EXTRA_EMAIL, "lukasfor@gmail.com");
+                intent.putExtra(Intent.EXTRA_SUBJECT, "Hola Bro");
                 intent.putExtra(Intent.EXTRA_TEXT, value);
                 if (intent.resolveActivity(getPackageManager()) != null) {
                     startActivity(Intent.createChooser(intent, "Send Email"));
